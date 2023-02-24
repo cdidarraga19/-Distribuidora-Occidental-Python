@@ -31,8 +31,8 @@ header{
 .navegacion{
     position: fixed;
     width: 100%;
-    display: center;
-    align-items: center;
+    display: right;
+    align-items: right;
     padding: 8px;
     transition: all 0.5s ease;
     font-family: 'Open sans', sans-serif;
@@ -146,13 +146,13 @@ header{
 
 .timeline{
     background-color: #CE8F64;
-    height: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .timeline img{
-    width: 850px;
-    margin-top: 50px;
-    margin-left: 220px;    
+    max-width: 100%;
     
 }
 

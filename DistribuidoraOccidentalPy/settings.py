@@ -22,6 +22,8 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'jazzmin',
+    # 'admin_interface',
+    # 'colorfield',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -30,6 +32,71 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'core',
 ]
+
+# Jazmine Setings
+
+JAZZMIN_SETTINGS = {
+    "site_title": "Distribuidora Occidental",
+    "site_header": "Distribuidora Occidental",
+    "site_brand": "Distribuidora Occ",
+    "site_logo": "/img/logo.png",
+    "site_icon": "/img/logo.png",
+    "site_logo_classes": "img-none shadow-none",
+    "welcome_sing": "Bienvendo a Distribuidora Occidental",
+    "copyright": "Distribuidora Occidental copyright",
+    "show_sidebar": True,
+    "navigation-expanded": False,
+    "search-model": "auth.User",
+    "hide-apps": [
+        
+    ],
+    "icons": {
+        "auth": "fas fa-users-cog",
+        "auth.user": "fas fa-user",
+        "auth.Group": "fas fa-users",
+        "accounts": "fas fa-user-circle",
+        "accounts.Account": "",
+        
+    },
+    "related-modal-active": False,
+    "show_ui_builder": False,
+    "changeform-format": "carrousel",
+    "custom-css": "css/dashboard/admin.css",
+    
+}
+JAZZMIN_UI_TWEAKS = {
+    "navbar_small_text": True,
+    "footer_small_text": True,
+    "body_small_text": False,
+    "brand_small_text": False,
+    "brand_colour": False,
+    "accent": "accent-primary",
+    "navbar": "navbar-white navbar-light",
+    "no_navbar_border": True,
+    "navbar_fixed": True,
+    "layout_boxed": False,
+    "footer_fixed": True,
+    "sidebar_fixed": True,
+    "sidebar": "sidebar-dark-info",
+    "sidebar_nav_small_text": True,
+    "sidebar_disable_expand": True,
+    "sidebar_nav_child_indent": True,
+    "sidebar_nav_compact_style": True,
+    "sidebar_nav_legacy_style": False,
+    "sidebar_nav_flat_style": True,
+    "theme": "united",
+    "dark_mode_theme": None,
+    "button_classes": {
+        "primary": "btn-primary",
+        "secondary": "btn-secondary",
+        "info": "btn-info",
+        "warning": "btn-warning",
+        "danger": "btn-danger",
+        "success": "btn-success"
+    },
+    "actions_sticky_top": False
+}
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

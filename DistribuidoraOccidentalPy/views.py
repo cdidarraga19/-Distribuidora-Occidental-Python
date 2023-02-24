@@ -49,3 +49,7 @@ def registro(request):
         data["form"] = formulario 
     return render(request, 'registro.html',data)
 
+
+def tienda(request):
+    return render(request,'tienda.html',{      
+})
