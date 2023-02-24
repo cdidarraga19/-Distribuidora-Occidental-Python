@@ -200,7 +200,7 @@ class Venta(models.Model):
     idProducto = models.ForeignKey(Producto,on_delete=models.CASCADE, verbose_name='Producto')
 
     def __str__(self):
-        return self.fechaVenta
+        return self.usuario.primer_nombre
 
     class Meta:
         verbose_name = 'Ventas'

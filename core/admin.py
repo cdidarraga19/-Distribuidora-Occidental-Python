@@ -50,7 +50,7 @@ class InventarioEntradaAdmin(admin.ModelAdmin):
 
 @admin.register(Venta)
 class VentaAdmin(admin.ModelAdmin):
-    list_display = ['fechaVenta']
+    list_display = ['usuario', 'fechaVenta']
 
 @admin.register(DetalleVenta)
 class DetalleVentaAdmin(admin.ModelAdmin):
