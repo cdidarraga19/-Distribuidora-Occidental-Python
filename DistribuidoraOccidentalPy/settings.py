@@ -47,6 +47,7 @@ JAZZMIN_SETTINGS = {
     "show_sidebar": True,
     "navigation-expanded": False,
     "search-model": "auth.User",
+    "search_model": ["auth.User"],
     "hide-apps": [
         
     ],
@@ -60,8 +61,14 @@ JAZZMIN_SETTINGS = {
     },
     "related-modal-active": False,
     "show_ui_builder": False,
-    "changeform-format": "carrousel",
+    "changeform_format": "carrousel",
+    "changeform_format_overrides": {"auth.user": "vertical_tabs","auth.group":"vertical_tabs"},
     "custom-css": "css/dashboard/admin.css",
+    
+    "topmenu_links": [
+        {"name": "Inicio",  "url": "index", "permissions": ["auth.view_user"]},
+    ]
+    
     
 }
 JAZZMIN_UI_TWEAKS = {
@@ -87,14 +94,13 @@ JAZZMIN_UI_TWEAKS = {
     "theme": "united",
     "dark_mode_theme": None,
     "button_classes": {
-        "primary": "btn-primary",
-        "secondary": "btn-secondary",
-        "info": "btn-info",
-        "warning": "btn-warning",
-        "danger": "btn-danger",
-        "success": "btn-success"
+        "primary": "btn-outline-primary",
+        "secondary": "btn-outline-secondary",
+        "info": "btn-outline-info",
+        "warning": "btn-outline-warning",
+        "danger": "btn-outline-danger",
+        "success": "btn-outline-success"
     },
-    "actions_sticky_top": False
 }
 
 
